@@ -1,93 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunny’s Grill</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+<div class="menu-grid">
 
-<body>
+<!-- ⭐ SPECIALS -->
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+  <h3>Sunny’s BBQ Smash Special</h3>
+  <p>$21.99</p>
+  <button onclick="addToCart('BBQ Smash Special', 21.99)">Add to Order</button>
+</div>
 
-<header>
-  <div class="logo">☀️ Sunny’s Grill</div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Spicy Chicken Sandwich Meal</h3>
+  <p>$17.99</p>
+  <button onclick="addToCart('Spicy Chicken Meal', 17.99)">Add to Order</button>
+</div>
 
-  <nav>
-    <a href="#menu">Menu</a>
-    <a href="#about">About</a>
-    <a href="#cart">Cart</a>
-  </nav>
-</header>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b">
+  <h3>Bacon Mac Supreme Meal</h3>
+  <p>$14.99</p>
+  <button onclick="addToCart('Bacon Mac Supreme', 14.99)">Add to Order</button>
+</div>
 
-<section class="hero">
-  <h1>Fresh. Fast. Fired on the Grill.</h1>
-  <p>Smash burgers, spicy chicken, and bold flavors made daily.</p>
-  <button onclick="scrollToMenu()">View Menu</button>
-</section>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Inferno Double Bacon Burger</h3>
+  <p>$29.99</p>
+  <button onclick="addToCart('Inferno Burger', 29.99)">Add to Order</button>
+</div>
 
-<!-- ABOUT -->
-<section id="about" class="about">
-  <h2>About Us</h2>
-  <p>
-    Sunny’s Grill is a locally inspired fast-casual restaurant serving bold, flame-grilled meals made fresh daily. Founded in 2009, we’ve built a reputation for high-quality ingredients, fast service, and unforgettable flavor.
-  </p>
-</section>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+  <h3>Build Your Own Combo</h3>
+  <p>$24.99</p>
+  <button onclick="addToCart('Build Your Own Combo', 24.99)">Add to Order</button>
+</div>
 
-<!-- MENU -->
-<section id="menu" class="menu">
-  <h2>Menu</h2>
+<!-- 🍔 ENTRÉES -->
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+  <h3>Burgers (Single/Double/Spicy/BBQ)</h3>
+  <p>$9.99</p>
+  <button onclick="addToCart('Burger', 9.99)">Add to Order</button>
+</div>
 
-  <div class="menu-grid">
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Chicken Sandwich (Regular/Spicy)</h3>
+  <p>$7.99</p>
+  <button onclick="addToCart('Chicken Sandwich', 7.99)">Add to Order</button>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-      <h3>Sunny’s BBQ Smash Special</h3>
-      <p>$21.99</p>
-      <button onclick="addToCart('BBQ Smash Special', 21.99)">Add to Order</button>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+  <h3>Wraps (Chicken/Spicy/Vegan)</h3>
+  <p>$6.99</p>
+  <button onclick="addToCart('Wrap', 6.99)">Add to Order</button>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
-      <h3>Spicy Chicken Sandwich</h3>
-      <p>$7.99</p>
-      <button onclick="addToCart('Spicy Chicken Sandwich', 7.99)">Add to Order</button>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Pizza (Small/Medium/Large)</h3>
+  <p>$6.99–$9.99</p>
+  <button onclick="addToCart('Pizza', 8.49)">Add to Order</button>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75">
-      <h3>Double Bacon Burger</h3>
-      <p>$9.99</p>
-      <button onclick="addToCart('Double Bacon Burger', 9.99)">Add to Order</button>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75">
+  <h3>BBQ Ribs</h3>
+  <p>$8.99</p>
+  <button onclick="addToCart('Ribs', 8.99)">Add to Order</button>
+</div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-      <h3>Loaded Nachos</h3>
-      <p>$4.99</p>
-      <button onclick="addToCart('Loaded Nachos', 4.99)">Add to Order</button>
-    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Teriyaki Chicken Bowl</h3>
+  <p>$8.99</p>
+  <button onclick="addToCart('Teriyaki Bowl', 8.99)">Add to Order</button>
+</div>
 
-  </div>
-</section>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+  <h3>Southwest Avocado Bowl</h3>
+  <p>$9.99</p>
+  <button onclick="addToCart('Avocado Bowl', 9.99)">Add to Order</button>
+</div>
 
-<!-- CART -->
-<section id="cart" class="cart">
-  <h2>Your Order</h2>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Salmon Bowl</h3>
+  <p>$10.99</p>
+  <button onclick="addToCart('Salmon Bowl', 10.99)">Add to Order</button>
+</div>
 
-  <ul id="cart-items"></ul>
+<!-- 🍟 SIDES -->
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Fries (Bottomless)</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Fries', 4.99)">Add to Order</button>
+</div>
 
-  <p>Total: $<span id="total">0.00</span></p>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75">
+  <h3>Sweet Potato Fries</h3>
+  <p>$5.99</p>
+  <button onclick="addToCart('Sweet Potato Fries', 5.99)">Add to Order</button>
+</div>
 
-  <button class="order-btn" onclick="placeOrder()">Place Order</button>
-  <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Onion Rings</h3>
+  <p>$5.99</p>
+  <button onclick="addToCart('Onion Rings', 5.99)">Add to Order</button>
+</div>
 
-  <p id="message"></p>
-</section>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+  <h3>Mac & Cheese</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Mac and Cheese', 4.99)">Add to Order</button>
+</div>
 
-<footer>
-  <p>© 2026 Sunny’s Grill (Demo Website)</p>
-</footer>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+  <h3>Coleslaw</h3>
+  <p>$2.99</p>
+  <button onclick="addToCart('Coleslaw', 2.99)">Add to Order</button>
+</div>
 
-<script src="script.js"></script>
-</body>
-</html>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Jalapeño Poppers</h3>
+  <p>$6.99</p>
+  <button onclick="addToCart('Poppers', 6.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Mozzarella Sticks</h3>
+  <p>$5.99</p>
+  <button onclick="addToCart('Mozzarella Sticks', 5.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75">
+  <h3>Fried Pickles</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Fried Pickles', 4.99)">Add to Order</button>
+</div>
+
+<!-- 🥤 DRINKS -->
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87">
+  <h3>Soda</h3>
+  <p>$0.99</p>
+  <button onclick="addToCart('Soda', 0.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc">
+  <h3>Lemonade</h3>
+  <p>$0.99</p>
+  <button onclick="addToCart('Lemonade', 0.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+  <h3>Sweet/Unsweet Tea</h3>
+  <p>$0.99</p>
+  <button onclick="addToCart('Tea', 0.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+  <h3>Milkshakes</h3>
+  <p>$2.99</p>
+  <button onclick="addToCart('Milkshake', 2.99)">Add to Order</button>
+</div>
+
+<!-- 🧆 APPETIZERS -->
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d">
+  <h3>Loaded Nachos</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Nachos', 4.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+  <h3>Wings</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Wings', 4.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75">
+  <h3>Guacamole</h3>
+  <p>$4.99</p>
+  <button onclick="addToCart('Guac', 4.99)">Add to Order</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+  <h3>Cheese Curds</h3>
+  <p>$3.99</p>
+  <button onclick="addToCart('Curds', 3.99)">Add to Order</button>
+</div>
+
+</div>
